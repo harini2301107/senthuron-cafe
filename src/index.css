@@ -1,0 +1,203 @@
+
+
+body {
+    margin: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    color: #6F4E37; 
+    font-weight: 600; 
+}
+
+
+.order-button {
+    padding: 12px 30px; 
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px; 
+    background-color: #F5DEB3; 
+    color: #6F4E37;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    text-transform: uppercase;
+}
+
+.order-button:hover {
+    background-color: #E0C797; 
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.hero-section {
+    background-color: #6F4E37; 
+    color: white;
+    text-align: center;
+    padding: 100px 20px; 
+    min-height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.hero-content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    padding: 35px 40px; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    max-width: 90%; 
+    
+    
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6); 
+}
+
+
+.hero-cafe-image {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto;
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.hero-section h1 {
+    color: #FFFFFF; 
+    font-size: 4rem; 
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px; 
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+}
+
+.hero-section p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+.menu-section {
+    padding: 80px 20px; 
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.menu-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background-color: white;
+    padding: 0; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+    
+
+.menu-item-image {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover; 
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.menu-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+.menu-card .price {
+    font-weight: bold;
+    color: #6F4E37; 
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #333333; 
+    color: white;
+}
+
+.contact-section h2 {
+    color: white; 
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: left;
+}
+
+.contact-details div {
+    margin: 15px;
+}
+
+.contact-details h3 {
+    color: #F5DEB3; 
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 450px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #444444;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 15px; 
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contact-form .order-button {
+    width: 100%; 
+    margin-top: 10px;
+}
