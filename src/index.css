@@ -238,3 +238,11 @@ h1, h2, h3 {
     max-width: 450px; 
     margin: 20px auto 0 auto;
 }
+/* Style for the button when it's in the 'added' state */
+.add-to-cart-button[disabled] {
+    background-color: #28a745; /* Green color for success */
+    color: white;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
