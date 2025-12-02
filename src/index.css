@@ -1,5 +1,3 @@
-
-
 body {
     margin: 0; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +10,7 @@ h1, h2, h3 {
     font-weight: 600; 
 }
 
-
+/* --- Global Button Style --- */
 .order-button {
     padding: 12px 30px; 
     font-size: 1.2rem;
@@ -31,8 +29,17 @@ h1, h2, h3 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
 
+/* Optional: Make the button look different when disabled (sending) */
+.contact-form button:disabled {
+    background-color: #999999;
+    color: #333333;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
 
 
+/* --- HERO SECTION STYLES --- */
 .hero-section {
     background-color: #6F4E37; 
     color: white;
@@ -42,10 +49,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
-
 
 .hero-content {
     display: flex; 
@@ -54,11 +58,8 @@ h1, h2, h3 {
     padding: 35px 40px; 
     background-color: rgba(0, 0, 0, 0.2); 
     max-width: 90%; 
-    
-    
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6); 
 }
-
 
 .hero-cafe-image {
     width: 100%; 
@@ -84,7 +85,7 @@ h1, h2, h3 {
 }
 
 
-
+/* --- MENU SECTION STYLES --- */
 .menu-section {
     padding: 80px 20px; 
     text-align: center;
@@ -95,7 +96,6 @@ h1, h2, h3 {
     font-size: 3rem;
     margin-bottom: 50px;
 }
-
 
 .menu-grid {
     display: grid;
@@ -118,7 +118,6 @@ h1, h2, h3 {
     transform: translateY(-5px);
 }
     
-
 .menu-item-image {
     width: 100%;
     height: 350px; 
@@ -128,7 +127,6 @@ h1, h2, h3 {
     border-top-right-radius: 10px;
     margin-bottom: 15px;
 }
-
 
 .menu-card h3 {
     font-size: 1.5rem;
@@ -141,9 +139,34 @@ h1, h2, h3 {
     font-weight: bold;
     color: #6F4E37; 
     font-size: 1.3rem;
-    padding-bottom: 20px;
+    /* Removed padding-bottom here to make room for the new button */
 }
 
+/* 1. Add to Cart Button Style */
+.add-to-cart-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #6F4E37; /* Coffee Brown Border */
+    border-radius: 6px;
+    background-color: white; 
+    color: #6F4E37;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 90%; /* Make it wide */
+    margin: 15px auto 20px auto; /* Center it below price */
+    display: block;
+    font-weight: bold;
+}
+
+.add-to-cart-button:hover {
+    background-color: #6F4E37; /* Solid Brown on hover */
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- CONTACT SECTION STYLES --- */
 .contact-section {
     padding: 80px 20px;
     text-align: center;
@@ -156,7 +179,6 @@ h1, h2, h3 {
     font-size: 2.5rem;
     margin-bottom: 50px;
 }
-
 
 .contact-details {
     display: flex;
@@ -200,4 +222,19 @@ h1, h2, h3 {
 .contact-form .order-button {
     width: 100%; 
     margin-top: 10px;
+}
+
+/* 2. Success Message Style */
+.contact-section .success-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #28a745; /* Green Background */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+    /* Position it outside the form but within the section */
+    max-width: 450px; 
+    margin: 20px auto 0 auto;
 }

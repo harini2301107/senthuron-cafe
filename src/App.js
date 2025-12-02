@@ -1,15 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import './App.css';
+import MenuSection from './components/MenuSection';
 import HeroSection from './components/HeroSection';
-import MenuSection from './components/MenuSection'; 
-import ContactSection from './components/ContactSection'; 
-import './index.css'; // Make sure this line is here to load your styles
+import ContactSection from './components/ContactSection';
+
 
 function App() {
+  
+  const menuRef = useRef(null);
+
+  
+  const handleScrollToMenu = () => {
+    menuRef.current.scrollIntoView({
+      behavior: 'smooth', 
+      block: 'start', 
+    });
+  };
+
   return (
     <div className="App">
-      <HeroSection />
-      <MenuSection /> 
-      <ContactSection /> 
+      {/* 1. Pass the scroll function to the Hero component */}
+      <HeroSection onOrderClick={handleScrollToMenu} />
+
+      {/* 2. Attach the reference to the Menu component */}
+      <MenuSection ref={menuRef} />
+
+      {/* Other sections */}
+      <ContactSection />
     </div>
   );
 }
